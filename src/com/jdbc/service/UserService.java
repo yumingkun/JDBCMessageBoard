@@ -26,6 +26,23 @@ public class UserService {
         return  userDAO.login(username,password);
     }
 
+    /**
+     * 根据ID获取用户信息
+     * @param id 前端传过来的id
+     * @return
+     */
+    public User getUserId(Long id){
+        return  userDAO.getUserId(id);
+    }
+
+    /**
+     * 修改用户信息
+     * @param user
+     * @return
+     */
+    public  boolean updateUser(User user){
+        return userDAO.updateUser(user);
+    }
 
 
 

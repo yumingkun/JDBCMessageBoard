@@ -41,7 +41,7 @@
             <a href="/my/message/list.do">我的留言</a>
         </nav>
         <nav>
-            <a href="/userInfo.do">我的信息</a>
+            <a href="${pageContext.request.contextPath}/userInfo.do">我的信息</a>
         </nav>
         <%} else { %>
         <nav>
@@ -107,7 +107,7 @@
     </div>
 </section>
 <footer>
-    copy@慕课网
+    copy@yu
 </footer>
 </body>
 </html>
