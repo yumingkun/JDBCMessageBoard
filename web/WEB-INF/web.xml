@@ -23,15 +23,19 @@
 
 
 
+    <!--中文乱码过滤器-->
+    <filter>
+        <filter-name>CharsetEncodingFilter</filter-name>
+        <filter-class>com.jdbc.filter.CharsetEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
 
-    <!--<servlet>-->
-        <!--<servlet-name>MessageListServlet</servlet-name>-->
-        <!--<servlet-class>com.jdbc.servlet.MessageListServlet</servlet-class>-->
-    <!--</servlet>-->
-
-    <!--<servlet-mapping>-->
-        <!--<servlet-name>MessageListServlet</servlet-name>-->
-        <!--<url-pattern>/message/list.do</url-pattern>-->
-    <!--</servlet-mapping>-->
+    <filter-mapping>
+        <filter-name>CharsetEncodingFilter</filter-name>
+        <url-pattern>*.do</url-pattern>
+    </filter-mapping>
 
 </web-app>
