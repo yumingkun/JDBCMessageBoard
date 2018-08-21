@@ -20,6 +20,7 @@ header,section,footer{
 .container{
 	width:1150px;
 	margin:0 auto;
+	background-color: #9d9d9d;
 }
 header{
 	height:45px;
@@ -98,7 +99,7 @@ header nav>a{
 	margin:0 auto;
 	white-space: nowrap;
 	overflow: hidden;
-　　	text-overflow: ellipsis;
+	text-overflow: ellipsis;
 	line-height: 30px;
 }
 .alt-content>p{
@@ -146,6 +147,7 @@ header nav>a{
 	box-shadow:5px 5px 12px #ccc;
 }
 footer{
+	background-color: #9d9d9d;
 	margin-top:10px;
 	line-height:35px;
 	border-top:1px solid #d0d6d9;

@@ -7,7 +7,7 @@ import java.sql.*;
 public class ConnectUtil {
     private ConnectUtil(){}
 
-    private static  String url="jdbc:mysql://localhost:3306/message_board";
+    private static  String url="jdbc:mysql://localhost:3306/jdbcdemo";
     private static  String user="root";
     private static  String password="root";
 
@@ -24,11 +24,16 @@ public class ConnectUtil {
     }
 
     //        2：连接
-    public static Connection getConnection() throws Exception{
+    public static Connection getConnection(){
 
-       Connection conn= DriverManager.getConnection(url,user,password);
+        Connection conn= null;
+        try {
+            conn = DriverManager.getConnection(url,user,password);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
-       return conn;
+        return conn;
     }
 
 
