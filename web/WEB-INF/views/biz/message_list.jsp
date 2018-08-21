@@ -45,7 +45,8 @@
         </nav>
         <%} else { %>
         <nav>
-            <a href="/login.do">登录</a>
+            <%--http://localhost:8080/JDBCMessageBoard/login.do--%>
+            <a href="${pageContext.request.contextPath}/login.do">登录</a>
             <a href="/regPrompt.do">注册</a>
         </nav>
         <% } %>
@@ -92,7 +93,7 @@
 
         <div id="pagefy">
             <ul>
-                <form id="messageForm" action="/message/list.do" method="post">
+                <form id="messageForm" action="${pageContext.request.contextPath}/message/list.do" method="post">
                     <input type="hidden" id="page" name="page" value="${page}">
                     <input type="hidden" id="last" name="last" value="${last}">
                     <li><a href="javascript:void(0)" onclick="submitMessageForm('first')">首页</a></li>

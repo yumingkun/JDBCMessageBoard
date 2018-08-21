@@ -20,7 +20,7 @@ header,section,footer{
 .container{
 	width:1150px;
 	margin:0 auto;
-	background-color: #9d9d9d;
+
 }
 header{
 	height:45px;
@@ -73,6 +73,7 @@ header nav>a{
 	height:auto;
 	margin-bottom:15px;
 	background: #F9F9F9;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
 }
 .alt-item>.alt-head{
 	width:100%;
