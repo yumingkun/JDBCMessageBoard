@@ -82,11 +82,11 @@
     <div class="container">
         <% if (null != request.getSession().getAttribute("user")) {%>
         <div id="fatie">
-            <a href="/addMessagePrompt.do"><button>点我留言</button></a>
+            <a href="${pageContext.request.contextPath}/addMessagePrompt.do"><button>点我留言</button></a>
         </div>
         <%} else { %>
         <div id="fatie">
-            请<a href="/login.do"><button>登录</button></a>后留言
+            请<a href="${pageContext.request.contextPath}/login.do"><button>登录</button></a>后留言
         </div>
         <% } %>
 

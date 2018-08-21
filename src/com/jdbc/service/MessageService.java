@@ -3,6 +3,7 @@ package com.jdbc.service;
 import com.jdbc.bean.Message;
 import com.jdbc.dao.MessageDAO;
 
+import java.util.Date;
 import java.util.List;
 
 //消息service
@@ -32,5 +33,16 @@ public class MessageService {
     public  int countMessage() {
 
         return messageDAO.countMessages();
+    }
+
+
+    /**
+     * 新建留言
+     * @param message
+     * @return
+     */
+    public boolean addMessage(Message message){
+        message.setCreateTime(new Date());
+        return messageDAO.save(message);
     }
 }
