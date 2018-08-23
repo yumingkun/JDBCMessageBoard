@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.util.List;
 
 @WebServlet(name = "MessageListServletServlet",urlPatterns="/message/list.do")
+
 public class MessageListServletServlet extends HttpServlet {
     private MessageService messageService;
     @Override
